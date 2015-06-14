@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Aimlessmedia_Groupfeatures>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <Aimlessmedia_Pinterestimage /> <!-- if we don't do this then it is overwritten by this module -->
+            </depends>
+        </Aimlessmedia_Groupfeatures>
+    </modules>
+</config>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Aimlessmedia_Groupfeatures>
+            <version>0.2.0</version>
+        </Aimlessmedia_Groupfeatures>
+    </modules>
+
+    <global>
+        <models>
+            <aimlessmedia_groupfeatures>
+                <class>
+                    Aimlessmedia_Groupfeatures_Model
+                </class>
+            </aimlessmedia_groupfeatures>
+        </models>
+        <blocks>
+            <groupfeatures>
+                <class>Aimlessmedia_Groupfeatures_Block</class>
+            </groupfeatures>
+            <adminhtml>
+                <rewrite>
+                    <catalog_product_grid>Aimlessmedia_Groupfeatures_Block_Catalog_Product_Grid</catalog_product_grid>
+                </rewrite>
+            </adminhtml>
+        </blocks>
+    </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Aimlessmedia_Groupfeatures before="Mage_Adminhtml">Aimlessmedia_Groupfeatures_Adminhtml</Aimlessmedia_Groupfeatures>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+</config>
