@@ -4,9 +4,10 @@
         <Aimlessmedia_Groupfeatures>
             <active>true</active>
             <codePool>local</codePool>
-            <depends>
-                <Aimlessmedia_Pinterestimage /> <!-- if we don't do this then it is overwritten by this module -->
-            </depends>
+<!-- If the product grid options are not showing it could be that another extensions is adding actions to the list as well. Once you know which module it is uncomment the lines below and replace the example with your conflicting module -->
+            <!-- <depends>		
+                <Aimlessmedia_Pinterestimage /> 
+            </depends> -->
         </Aimlessmedia_Groupfeatures>
     </modules>
 </config>
